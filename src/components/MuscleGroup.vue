@@ -7,7 +7,13 @@
             <h1>{{muscle}}</h1>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
-            <Exercise v-for="(exercise, i) in exercises" :key="i" :exercise="exercise"/>
+            <v-container>
+              <v-row>
+                <v-col v-for="(exercise, i) in exercises" :key="i">
+                  <Exercise :exercise="exercise"/>
+                </v-col>
+              </v-row>
+            </v-container>
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
