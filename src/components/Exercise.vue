@@ -1,12 +1,16 @@
 <template>
   <div>
-    
+    <img :src="exercise" alt=""/>
   </div>
 </template>
 
 <script>
-export default {
 
+export default {
+  name: 'Exercise',
+  props: {
+    exercise: String
+  }
 }
 </script>
 
