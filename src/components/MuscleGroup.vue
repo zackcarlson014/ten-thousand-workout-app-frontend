@@ -1,8 +1,12 @@
 <template>
   <div>
-    <h5>
+    <v-app-bar
+      dense
+    >
       {{muscle}}
-    </h5>
+      <v-spacer></v-spacer>
+      <v-app-bar-nav-icon class="text-right"></v-app-bar-nav-icon>
+    </v-app-bar><br/>
   </div>
 </template>
 
@@ -15,6 +19,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
