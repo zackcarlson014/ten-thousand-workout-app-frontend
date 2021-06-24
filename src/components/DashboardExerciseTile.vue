@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'Exercise',
+  name: 'DashboardExerciseTile',
   props: {
     exercise: String
   }

@@ -10,7 +10,7 @@
             <v-container>
               <v-row>
                 <v-col v-for="(exercise, i) in exercises" :key="i">
-                  <Exercise :exercise="exercise"/>
+                  <DashboardExerciseTile :exercise="exercise"/>
                 </v-col>
               </v-row>
             </v-container>
@@ -23,12 +23,12 @@
 
 <script>
 
-import Exercise from './Exercise.vue'
+import DashboardExerciseTile from './DashboardExerciseTile.vue'
 
 export default {
-  name: 'MuscleGroup',
+  name: 'MuscleGroupDashboardDropdown',
   components: {
-    Exercise
+    DashboardExerciseTile
   },
   props: {
     muscle: String,

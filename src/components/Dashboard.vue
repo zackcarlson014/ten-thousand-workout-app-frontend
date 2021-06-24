@@ -10,7 +10,7 @@
         </h3>
       </v-col>
       <v-col>
-        <MuscleGroup v-for="(muscle, i) in muscleGroups" :key="i" :muscle="muscle.name" :exercises="muscle.exercises"/>
+        <DashboardMuscleGroupDropdown v-for="(muscle, i) in muscleGroups" :key="i" :muscle="muscle.name" :exercises="muscle.exercises"/>
       </v-col>  
     </v-container>
   </div>
@@ -18,12 +18,12 @@
 
 <script>
 
-import MuscleGroup from './MuscleGroup.vue'
+import DashboardMuscleGroupDropdown from './DashboardMuscleGroupDropdown.vue'
 
 export default {
   name: "Dashboard",
   components: {
-    MuscleGroup
+    DashboardMuscleGroupDropdown
   },
   data: () => ({
     title: 'Ten Thousand Reps',
