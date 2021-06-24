@@ -25,78 +25,13 @@ export default {
   components: {
     DashboardMuscleGroupDropdown
   },
+  props: {
+    muscleGroups: Array
+  },
   data: () => ({
     title: 'Ten Thousand Reps',
     keyToSuccess: 'You gotta want it!',
-    muscleGroups: [
-      {
-        name: 'Legs',
-        exercises: [
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-        ],
-      },
-      {
-        name: 'Back',
-        exercises: [
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-        ],
-      },
-      {
-        name: 'Shoulders',
-        exercises: [
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-        ],
-      },
-      {
-        name: 'Chest',
-        exercises: [
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-        ],
-      },
-      {
-        name: 'Core',
-        exercises: [
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-        ],
-      },
-      {
-        name: 'Arms',
-        exercises: [
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-          "https://thumbs.dreamstime.com/b/body-stretch-fit-man-stretching-back-doing-yoga-workout-gym-black-male-athlete-doing-back-extension-stretch-exercise-lying-157467114.jpg",
-        ]
-      },
-    ]
-  })
+  }),
 }
 </script>
 
