@@ -24,11 +24,11 @@
     <v-card-actions>
       <v-btn
         class="d-flex justify-center"
-        color="deep-purple lighten-2"
+        color="purple"
         text
         @click="reserve"
       >
-        Reserve
+        Start Set
       </v-btn>
     </v-card-actions>
   </v-card>

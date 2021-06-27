@@ -1,8 +1,10 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <Dashboard :muscleGroups="muscleGroups"/>
-  </div>
+  <v-app>
+    <div class="home">
+      <img alt="Vue logo" src="../assets/logo.png">
+      <Dashboard :muscleGroups="muscleGroups"/>
+    </div>
+  </v-app>
 </template>
 
 <script>
