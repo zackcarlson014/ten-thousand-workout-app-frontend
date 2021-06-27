@@ -14,7 +14,8 @@
 
     <v-img
       height="250"
-      src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      :src="exercise.image ? exercise.image : 'https://cdn.vuetifyjs.com/images/cards/cooking.png'"
+      :key="exercise.id"
     ></v-img>
 
     <v-card-title>{{exercise.name}}</v-card-title>
