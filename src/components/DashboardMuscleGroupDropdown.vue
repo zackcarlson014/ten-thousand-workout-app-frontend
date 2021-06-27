@@ -9,7 +9,7 @@
           <v-expansion-panel-content>
             <v-container>
               <v-row>
-                <v-col v-for="(exercise, i) in exercises" :key="i">
+                <v-col v-for="(exercise, i) in exercises" :key="i" cols="12" sm="3">
                   <DashboardExerciseTile :exercise="exercise"/>
                 </v-col>
               </v-row>
