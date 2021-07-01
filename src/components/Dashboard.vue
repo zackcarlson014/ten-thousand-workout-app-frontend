@@ -11,8 +11,15 @@
       </v-col>
       <v-col>
         <v-row justify="center">
-          <v-expansion-panels accordion>
-            <DashboardMuscleGroupDropdown v-for="(muscle, i) in muscleGroups" :key="i" :muscle="muscle.name" :exercises="muscle.exercises"/>
+          <v-expansion-panels 
+            v-for="(muscle, i) in muscleGroups" 
+            :key="i" 
+            accordion
+          >
+            <DashboardMuscleGroupDropdown 
+              :muscle="muscle.name" 
+              :exercises="muscle.exercises"
+            />
           </v-expansion-panels>
         </v-row>
       </v-col>  

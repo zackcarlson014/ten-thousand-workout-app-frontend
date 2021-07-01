@@ -6,7 +6,12 @@
       <v-expansion-panel-content>
         <v-container>
           <v-row>
-            <v-col v-for="(exercise, i) in exercises" :key="i" cols="12" sm="3">
+            <v-col 
+              v-for="(exercise, i) in exercises" 
+              :key="i" 
+              cols="12" 
+              sm="3"
+            >
               <v-chip-group>
                 <DashboardExerciseTile :exercise="exercise"/>
               </v-chip-group>

@@ -1,17 +1,30 @@
 <template>
-  <div>
-    <v-row>
-      <h1 v-for="(muscle, i) in  muscleGroups" :key="i">{{muscle.name}}</h1>
+  <v-container>
+    <v-row >
+      <v-col 
+        v-for="(muscle, i) in  muscleGroups" 
+        :key="i"
+        cols="4"
+      >
+        <MuscleGroupViewCard 
+          :muscle="muscle.name"
+          :exercises="muscle.exercises"
+        />
+      </v-col>
     </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>
 
+import MuscleGroupViewCard from '@/components/MuscleGroupsViewCard.vue'
 import { mapState } from 'vuex';
 
 export default {
   name: 'MuscleGroups',
+  components: {
+    MuscleGroupViewCard,
+  },
   computed: {
     ...mapState({
       muscleGroups: state => state.muscleGroups
