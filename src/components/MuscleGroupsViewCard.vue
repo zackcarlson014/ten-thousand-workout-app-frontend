@@ -1,5 +1,5 @@
 <template>
-  <v-card
+  <!-- <v-card
     max-width="400"
     class="mx-auto"
   >
@@ -29,13 +29,11 @@
         </v-icon>
       </v-btn>
     </v-app-bar>
-    <v-for v-for="(exercise, i) in exercises" :key="i"> 
-      <MuscleGroupsViewExerciseCard :exercise="exercise"/>
-    </v-for>
-
-      
-
-  </v-card>
+    <v-card-text>
+      <MuscleGroupsViewExerciseCard/>
+    </v-card-text>
+  </v-card> -->
+  <MuscleGroupsViewExerciseCard/>
 </template>
 
 <script>

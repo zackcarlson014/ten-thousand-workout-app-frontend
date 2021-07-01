@@ -4,7 +4,7 @@
       <v-col 
         v-for="(muscle, i) in  muscleGroups" 
         :key="i"
-        cols="4"
+        cols="12"
       >
         <MuscleGroupViewCard 
           :muscle="muscle.name"

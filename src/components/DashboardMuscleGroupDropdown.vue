@@ -5,7 +5,7 @@
       </v-expansion-panel-header>
       <v-expansion-panel-content>
         <v-container>
-          <v-row>
+          <v-row justify="center">
             <v-col 
               v-for="(exercise, i) in exercises" 
               :key="i" 
@@ -13,7 +13,9 @@
               sm="3"
             >
               <v-chip-group>
-                <DashboardExerciseTile :exercise="exercise"/>
+                <v-row justify="center">
+                  <DashboardExerciseTile :exercise="exercise"/>
+                </v-row>
               </v-chip-group>
             </v-col>
           </v-row>
