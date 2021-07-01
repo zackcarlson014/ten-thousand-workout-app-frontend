@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
+    <div>
       <Dashboard :muscleGroups="muscleGroups"/>
     </div>
   </v-app>

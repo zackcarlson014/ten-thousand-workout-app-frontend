@@ -1,7 +1,8 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <h1 v-for="(muscle, i) in  muscleGroups" :key="i">{{muscle.name}}</h1>
+  <div>
+    <v-row>
+      <h1 v-for="(muscle, i) in  muscleGroups" :key="i">{{muscle.name}}</h1>
+    </v-row>
   </div>
 </template>
 

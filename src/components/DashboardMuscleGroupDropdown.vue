@@ -7,7 +7,9 @@
         <v-container>
           <v-row>
             <v-col v-for="(exercise, i) in exercises" :key="i" cols="12" sm="3">
-              <DashboardExerciseTile :exercise="exercise"/>
+              <v-chip-group>
+                <DashboardExerciseTile :exercise="exercise"/>
+              </v-chip-group>
             </v-col>
           </v-row>
         </v-container>

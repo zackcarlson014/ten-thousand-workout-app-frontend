@@ -1,5 +1,12 @@
 <template>
-  <v-card
+    <v-chip
+      class="ma-2"
+      color="primary"
+      x-large
+    >
+      {{exercise.name}}
+    </v-chip>
+  <!-- <v-card
     :loading="loading"
     class="mx-auto my-12"
     max-width="374"
@@ -32,7 +39,7 @@
         Start Set
       </v-btn>
     </v-card-actions>
-  </v-card>
+  </v-card> -->
 </template>
 
 <script>
@@ -40,7 +47,7 @@
 export default {
   name: 'DashboardExerciseTile',
   props: {
-    exercise: String
+    exercise: Object
   }
 }
 </script>
