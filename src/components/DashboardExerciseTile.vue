@@ -1,4 +1,5 @@
 <template>
+  <RouterLink :to="`/exercise/${this.exercise.id}`">
     <v-chip
       class="ma-2"
       color="primary"
@@ -6,6 +7,7 @@
     >
       {{exercise.name}}
     </v-chip>
+    </RouterLink>
   <!-- <v-card
     :loading="loading"
     class="mx-auto my-12"

@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import MuscleGroups from '../views/MuscleGroups.vue'
 import Exercises from '../views/Exercises.vue'
 import Profile from '../views/Profile.vue'
+import Exercise from '../components/Exercise.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/exercise/:id',
+    name: 'Exercise',
+    component: Exercise
   },
 ]
 
